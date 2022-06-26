@@ -12,7 +12,7 @@ import java.util.Objects;
 @ToString
 @RequiredArgsConstructor
 @Entity
-public class Character {
+public class CharacterSlots {
     @Id
     private Long id;
 
@@ -23,8 +23,8 @@ public class Character {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || Hibernate.getClass(this) != Hibernate.getClass(o)) return false;
-        Character character = (Character) o;
-        return id != null && Objects.equals(id, character.id);
+        CharacterSlots characterSlots = (CharacterSlots) o;
+        return id != null && Objects.equals(id, characterSlots.id);
     }
 
     @Override

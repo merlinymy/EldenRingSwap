@@ -3,7 +3,7 @@ package com.merlinymy.eldenringitemswap.payload;
 import lombok.Data;
 
 @Data
-public class weaponDTO {
+public class WeaponDTO {
     private String weaponNNNN;
     private String weaponXXXXXXXX;
     private String weaponCategory;

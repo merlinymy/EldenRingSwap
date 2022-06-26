@@ -6,6 +6,7 @@ import org.hibernate.Hibernate;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import java.util.Objects;
 
 @Getter
@@ -14,16 +15,14 @@ import java.util.Objects;
 @RequiredArgsConstructor
 
 @Entity
+@Table(name = "weapons")
 public class Weapons {
     @Id
     private Long id;
-    @Column(name = "weaponNNNN")
     private String weaponNNNN;
-    @Column(name = "weaponXXXXXXXX")
     private String weaponXXXXXXXX;
-    @Column(name = "weaponCategory")
-    private String category;
-    @Column(name = "weaponName")
+    private String weaponCategory;
+
     private String weaponName;
 
     @Override

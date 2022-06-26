@@ -3,7 +3,7 @@ package com.merlinymy.eldenringitemswap.payload;
 import lombok.Data;
 
 @Data
-public class itemDTO {
+public class ItemDTO {
     private Long id;
     private String itemXXXX;
     private String itemNNNN;
